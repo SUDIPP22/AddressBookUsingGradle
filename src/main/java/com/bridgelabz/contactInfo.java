@@ -1,6 +1,7 @@
 package com.bridgelabz;
 
 public class contactInfo {
+    int id;
     String first_name;
     String last_name;
     String address;
@@ -22,6 +23,11 @@ public class contactInfo {
         this.zip = zip;
         this.phone_number = phone_number;
         this.email = email;
+    }
+
+    public contactInfo(int id, String first_name, String last_name, String address, String city, String state, int zip, String phoneNo, String email) {
+        this(first_name, last_name, address, city, state, zip, phoneNo, email);
+        this.id = id;
     }
 
     public String getFirst_name() {
